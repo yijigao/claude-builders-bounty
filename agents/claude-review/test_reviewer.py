@@ -8,7 +8,7 @@ from reviewer.github import parse_pr_url, fetch_pr
 from reviewer.engine import HeuristicEngine
 from reviewer.__main__ import main
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 
 
 def snapshot(patch_text='@@ -1 +1 @@\n-old\n+new', filename='src/app.py'):
